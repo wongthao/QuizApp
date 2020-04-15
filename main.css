@@ -1,56 +1,198 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }  
 body{ 
     display: flex;
     flex-direction: column;
     align-items:center;
-    background-color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    Font-size: 25px;
 
+    background-image: url("Leopard/africa.jpg");
 
 }
-main{
-    background-color:white;
+main{   
+    background: #FDC830;  
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
+    background: linear-gradient(to right, #F37335, #FDC830); 
     border-radius: 5%;
-    width:50%;
-    height: 700px;
+    width: 800px;
+    max-width: 80%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;    
+    margin-top: 100px; 
+    box-shadow: 0 0 50px 10px;
 }
-
 
 
 header{
-    display:flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;  
-    margin-bottom: 90px;
-    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 300px 
+   
 }
 
-h3{
-    margin-top: -20px;
+li{
+    list-style-type: none;
+    padding: 3px;
+    border-radius: 5%;
+    font-size: 20px;
+}
+
+h4{
+    position: relative;
+    top: 40px;
+   
+}
+
+.beginningContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .questionContainer{
-    
+    display: flex;
+    text-align: center;
+}
+
+
+.feedBackBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.resultBox{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
     
 }
 
-.startButton{
-    margin-left: 40px;
-    border-radius: 10%;
+
+.nextButton{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+}
+
+button {
+    
+    margin-left: 2px;
+    border-radius: 8%;
     padding: 0 25px 0 25px;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 50px;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+img{
+    border-radius: 50%;
+    box-shadow: 0 0 30px 10px;
+    margin-top: 10px;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color:#F37335;
+    }
+
+
+fieldset{
+    border-width: 0;
+}
+
+span{
+    font-size: 20px;
 }
 
 
 
+
+@media screen and (max-width: 320px) {
+
+    h4{
+        display: none; 
+    }
+
+    h3{
+        display: none;
+    } 
+
+    h2{
+        font-size: 20px;
+    }
+
+    .leopardResponse{
+        height:150px;
+        width: 200px;
+    }
+
+    button{
+        margin-top:10px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    h4{
+        display: none; 
+    }
+
+    h3{
+        display: none;
+    } 
+
+    h2{
+        font-size: 20px;
+    }
+
+    .leopardResponse{
+        height: 200px;
+        width: 250px;
+    }
+
+    button{
+        margin-top:10px;
+    }
+
+}
+
+
+@media screen and (max-width: 920px) {
+
+      
+    header{
+        position: relative;
+        left: 5px;
+
+    }
+    li{
+        display: inline-block;
+    }
+
+}
+  

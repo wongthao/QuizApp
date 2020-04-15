@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css"href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    
 </head>
 <body>
     <main role ="main" class ="container">
         <header>
-            <h1>Leopard</h1>
-            <h3>The Pound for Pound King</h3>
-            
             <section class = "scoreTracker">
-                <ul class= "scoreResult"></ul>
+                <ul>
+                    <li> Question: <span class = "questionNumber">0</span>/6</li>
+                    <li>Score: <span class= "score">0</span></li>
+                </ul>
             </section>
         </header>
-        <section class= "scoreContainer"></section>
         
-        <section class ="questionContainer">
-            <div class =quesitonsBox>
-               
-                <button class= "startButton">Start</button>
-                <p>Begin Leopard Quiz</p>
-            </div>
-
+        <section class="beginningContainer">
+            <h1>Leopard</h1>
+            <h3>The Pound for Pound King</h3>
+            <img src="Leopard/main.jpg" height ="170" width="250" alt="mainLeopard">
+            <h4>Begin Leopard Quiz</h4>
         </section>
-    
         
+        <section class ="questionContainer"></section>
+        <section class ="feedBackBox"></section>
+        <section class ="resultBox"></section>
+
+
+        
+        <section class='buttonBox'>     
+            <button class= "startButton button">Start</button>
+        </section>
     </main>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="index.js"></script>
 
 </body>
 </html>
