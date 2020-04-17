@@ -13,15 +13,15 @@ const STORE = [
       'Africa and Asia',
   },
   {
-    question: 'Which answer out of the 4 is not true about a leopard?',
+    question: 'Which answer is not true about a leopard?',
     answer: [
-      'They hunt in groups and prefer to be around other leopards',
-      'They are solitary creatures',
+      'Leopards prefer to be around other leopards',
+      'Leopards are solitary creatures',
       'Leopards have dark spots called rosettes',
       'Leopards spend a lot of their time on trees',
     ],
     correctAnswer:
-      'They hunt in groups and prefer to be around other leopards',
+      'Leopards prefer to be around other leopards',
   },
   {
     question: 'Where do leopards take the animal they caught?',
@@ -46,7 +46,7 @@ const STORE = [
       'They are strong swimmers',
   },
   {
-    question: 'Which animal is leopard sometimes confused with?',
+    question: 'Which animal are leopards sometimes confused with?',
     answer: [
       'Hyena',
       'Jaguar',
@@ -136,19 +136,18 @@ function submitAnswer() {
     if (answer === correct) {
       $('.feedBackBox').show();
       $('.feedBackBox').html(`<h2>You Are Correct!</h2>
-      <img src="Leopard/correctLeopard.jpg" alt="correctLeopard" class="leopardResponse" width="350px" height="250px">`);
+      <img src="Leopard/correctLeopard.jpg" alt="correctLeopard" class="leopardResponse" width="350" height="250">`);
       
       updateScore(); 
       
     }
     else {
       $('.feedBackBox').show();
-      $('.feedBackBox').html(`<h2>Wrong Answer!</h2>
-      <img src="Leopard/wrong.jpg" alt="wrongLeopard" class="leopardResponse" width="350px" height="250px">`);
+      $('.feedBackBox').html(`<h2>Wrong Answer!</h2> \n The correct answer is: \n ${correct}`);
     }
     $('.questionContainer').hide();
     $('.submitButton').hide();
-    $('.buttonBox').append(`<button type="next" class="nextButton button"> Next</button> `)
+    $('.buttonBox').append(`<button type="buttonNext" class="nextButton button"> Next</button> `)
   });
 }
 
@@ -214,7 +213,6 @@ function resetResults(){
   $('.nextButton').remove();
   $('.restartButton').remove();
   
-
 }
 
 
